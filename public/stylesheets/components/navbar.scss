@@ -1,0 +1,28 @@
+@import "../variables/index";
+
+.navbar--main {
+  display: flex;
+  align-items: center;
+  &_title {
+    margin-right: 16px;
+    max-width: fit-content;
+    a {
+      color: #000;
+    }
+  }
+  &_menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    li {
+      a {
+        padding: 24px 20px;
+        color: #000;
+        font-weight: 400;
+      }
+      a.active {
+        color: #0033c7;
+      }
+    }
+  }
+}
