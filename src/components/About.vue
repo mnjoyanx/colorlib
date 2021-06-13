@@ -37,7 +37,10 @@
               the Line Lane. Pityful a rethoric question ran over her cheek,
               then she continued her way.
             </p>
-            <p>Learn More</p>
+            <p class="learn--more">
+              Learn More <span>></span>
+              <!-- <font-awesome-icon :icon="['fa', 'chevron-right']" /> -->
+            </p>
           </div>
         </div>
       </div>

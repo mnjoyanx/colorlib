@@ -13,10 +13,13 @@
   }
   &_text {
     width: 50%;
+    padding-bottom: 70px;
   }
 }
 
 .about--text_main {
+  width: 90%;
+  margin-left: auto;
   &_first {
     display: flex;
     align-items: center;
@@ -46,6 +49,13 @@
 .blind--text {
   font-size: 16px;
   color: #666666;
+  .learn--more {
+    color: #0033c7;
+    cursor: pointer;
+    border-bottom: 3px solid #0033c7;
+    width: fit-content;
+    margin-top: 18px;
+  }
 }
 
 .blind--text_second {
