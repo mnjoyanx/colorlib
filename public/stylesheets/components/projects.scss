@@ -1,0 +1,46 @@
+#projects {
+  padding: 112px 0;
+}
+
+.projects--main_content {
+  display: flex;
+  justify-content: space-between;
+  &_first {
+    width: 33%;
+    .projects--title {
+      display: flex;
+      align-items: center;
+      p {
+        font-size: 14.4px;
+        margin-right: 10px;
+      }
+      span {
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+    h2 {
+      font-size: 28px;
+      margin-top: 8px;
+      font-weight: 300;
+    }
+  }
+  &_second {
+    width: 55%;
+    &_text {
+      color: #666;
+    }
+    &_types {
+      margin-top: 48px;
+      display: flex;
+      p {
+        font-size: 13px;
+        margin-right: 16px;
+        color: #666;
+      }
+      .active {
+        font-weight: bold;
+      }
+    }
+  }
+}
