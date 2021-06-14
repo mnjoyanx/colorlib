@@ -3,6 +3,7 @@
 .about--main_content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 112px;
   &_img {
     width: 40%;
@@ -60,4 +61,19 @@
 
 .blind--text_second {
   margin-top: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .about--main_content {
+    flex-direction: column-reverse;
+    &_img {
+      width: 100%;
+    }
+    &_text {
+      width: 100%;
+    }
+    .about--text_main {
+      width: 100%;
+    }
+  }
 }

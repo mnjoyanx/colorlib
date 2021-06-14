@@ -16,6 +16,7 @@
 
 .work--flow_list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 96px;
   &_item {
@@ -66,4 +67,19 @@
 .user-secret {
   font-size: 50px;
   color: white;
+}
+
+@media screen and (max-width: 750px) {
+  .work--flow_list {
+    &_item {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  .work-flow_header {
+    display: block;
+    &_title {
+      margin-bottom: 20px;
+    }
+  }
 }

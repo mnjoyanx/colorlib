@@ -1,9 +1,11 @@
 @import "../variables/index";
 
 .slider--main_content {
-  position: absolute;
-  left: 0;
-  top: 30%;
+  transform: translate(-43%, 0);
+  -webkit-transform: translate(-43%, 0);
+  -moz-transform: translate(-43%, 0);
+  -ms-transform: translate(-43%, 0);
+  -o-transform: translate(-43%, 0);
   &_title {
     font-size: $txt-2xl;
   }
@@ -15,6 +17,7 @@
     font-weight: 100;
     color: rgba(0, 0, 0, 0.8);
     margin: 0;
+    width: 80%;
   }
   &_btn {
     background-color: #0033c7;
@@ -53,6 +56,7 @@
   height: 100vh;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -62,4 +66,47 @@
 
 .modern {
   background-image: url("https://preview.colorlib.com/theme/mosaic/images/xbg_1.jpg.pagespeed.ic.ElhwUpVw9_.webp");
+}
+
+@media screen and (max-width: 992px) {
+  .slider--main_content {
+    padding-left: 40px;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    &_title {
+      color: #0033c7;
+      font-size: 40px;
+    }
+    &_text {
+      color: #0033c7;
+      padding-right: 15px;
+      width: 80%;
+    }
+  }
+  .slider--bg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .slider--main_content {
+    padding: 0;
+    &_title {
+      font-size: 30px;
+      text-align: center;
+    }
+    &_text {
+      text-align: center;
+      padding: 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+    &_btn {
+      display: block;
+      margin: 20px auto;
+    }
+  }
 }

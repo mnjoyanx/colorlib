@@ -38,28 +38,21 @@ export default {
       slider: [
         {
           title: ["We Love", "Modern Designs"],
-          text: [
-            "A small river named Duden flows by their place and supplies it with the",
-            "necessary regelialia. It is a paradisematic country, in which roasted",
-            "parts of sentences fly into your mouth.",
-          ],
+          text: "A small river named Duden flows by their place and supplies it with the,necessary regelialia. It is a paradisematic country, in which roasted,parts of sentences fly into your mouth.",
           sticky: "ARCHITECTURE FIRM",
           bgImg: "amazing",
         },
         {
           title: ["We Create Amazing", "Architecture", "Designs"],
-          text: [
-            "A small river named Duden flows by their place and supplies it with the",
-            "necessary regelialia. It is a paradisematic country, in which roasted",
-            "parts of sentences fly into your mouth.",
-          ],
+          text: "A small river named Duden flows by their place and supplies it with the,necessary regelialia. It is a paradisematic country, in which roasted,parts of sentences fly into your mouth.",
           sticky: "SINCE - 2018",
           bgImg: "modern",
         },
       ],
       options: {
-        autoplay: true,
-        // effect: "zoom",
+        autoplay: {
+          delay: 5000,
+        },
         loop: true,
         navigation: {
           nextEl: ".swiper-button-next",

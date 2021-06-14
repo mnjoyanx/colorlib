@@ -18,7 +18,6 @@
       <swiper ref="mySwiper" :options="swiperOptions">
         <swiper-slide v-for="item in customers" :key="item.id">
           <div class="slider-main">
-            <div class="left-border"></div>
             <div class="slier--main__content">
               <div class="slier--main__content_img">
                 <img :src="item.img" alt="" />
@@ -99,6 +98,21 @@ export default {
         loop: true,
         pagination: {
           el: ".swiper-pagination",
+        },
+
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          320: {
+            slidesPerView: 1,
+          },
         },
       },
     };

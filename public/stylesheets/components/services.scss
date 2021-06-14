@@ -27,7 +27,7 @@
 .services--item {
   width: 42%;
   background: #fafafa;
-  padding: 24px;
+  padding: 18px;
   margin-bottom: 24px;
   .services--user_secret {
     color: #0033c7;
@@ -44,5 +44,32 @@
     color: #666666;
     font-weight: 100;
     padding-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .services--main_content {
+    flex-direction: column;
+    &_first {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .services--main_content_second {
+      width: 100%;
+    }
+    .services--item {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  #services {
+    padding: 30px 0;
+  }
+  .services--main_content {
+    &_second {
+      width: 65%;
+    }
   }
 }

@@ -32,6 +32,7 @@
 .slider-main {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 70px;
   .left-border {
     width: 10%;
   }
@@ -69,5 +70,10 @@
         -o-border-radius: 50%;
       }
     }
+  }
+}
+@media screen and (max-width: 992px) {
+  .testimony--main_header {
+    width: 100%;
   }
 }

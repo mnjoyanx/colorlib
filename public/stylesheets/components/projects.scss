@@ -44,3 +44,21 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  #projects {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .projects--main_content {
+    flex-direction: column;
+    &_first {
+      width: 100%;
+    }
+    &_second {
+      width: 100%;
+    }
+  }
+}

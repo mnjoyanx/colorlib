@@ -1,24 +1,22 @@
 <template>
   <div>
     <div class="container slider-container">
-      <div class="slider--main_content">
-        <h2
-          class="slider--main_content_title"
-          v-for="item in title"
-          :key="item"
-        >
-          {{ item }}
-        </h2>
-        <div class="slider--main_content_content">
-          <p class="slider--main_content_text" v-for="item in text" :key="item">
+      <div class="slider--bg" :class="bgImg">
+        <div class="slider--main_content">
+          <h2
+            class="slider--main_content_title"
+            v-for="item in title"
+            :key="item"
+          >
             {{ item }}
-          </p>
+          </h2>
+          <div class="slider--main_content_content">
+            <p class="slider--main_content_text">
+              {{ text }}
+            </p>
+          </div>
+          <button class="slider--main_content_btn">view our works</button>
         </div>
-        <button class="slider--main_content_btn">view our works</button>
-      </div>
-      <div class="slider--bg" :class="bgImg"></div>
-      <div class="slider--main_content_sticky">
-        <p>{{ sticky }}</p>
       </div>
     </div>
   </div>
@@ -33,7 +31,7 @@ export default {
       required: true,
     },
     text: {
-      type: Array,
+      type: String,
       required: true,
     },
 

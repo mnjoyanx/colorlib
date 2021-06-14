@@ -26,3 +26,62 @@
     }
   }
 }
+
+.menu--controller {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+  .iconify {
+    margin-right: 8px;
+    color: gray;
+  }
+  .open--menu_text {
+    color: gray;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #navbar {
+    background: black;
+    padding: 18px 0;
+  }
+  .menu--controller {
+    display: flex;
+  }
+  .navbar--main {
+    justify-content: space-between;
+    &_title {
+      a {
+        color: white;
+      }
+    }
+    &_menu {
+      display: none;
+    }
+    &_tablet {
+      display: block;
+    }
+  }
+}
+
+.navbar--main_tablet {
+  display: none;
+  padding: 0;
+  li {
+    list-style: none;
+    a {
+      color: gray;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+
+.opened-menu {
+  display: block;
+}

@@ -123,11 +123,20 @@
   }
 }
 
-@keyframes anime {
-  0% {
-    background-size: 140% 140%;
+@media screen and (max-width: 992px) {
+  .design--main {
+    .design-item {
+      width: 50%;
+      height: 50vw;
+    }
   }
-  100% {
-    background-size: cover;
+}
+
+@media screen and (max-width: 750px) {
+  .design--main {
+    .design-item {
+      width: 100%;
+      height: 100vw;
+    }
   }
 }
